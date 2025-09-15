@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Grace Sania Silalahi" />
+    <title>Blog Inspirasi Grace</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #fdfbfb, #f3f6ff);
+        min-height: 100vh;
+        color: #2c3e50;
+      }
+
+      /* Header */
+      header {
+        background: linear-gradient(120deg, #6a82fb, #fc5c7d);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+      }
+      header h1 {
+        font-size: 2.4em;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+      }
+      header p {
+        font-size: 1.05em;
+        opacity: 0.95;
+        margin-bottom: 15px;
+      }
+      nav a {
+        color: #fff;
+        font-weight: bold;
+        margin: 0 12px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      nav a:hover {
+        color: #ffe082;
+      }
+
+      /* Container */
+      .container {
+        max-width: 1000px;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 25px;
+        padding: 0 15px;
+      }
+
+      /* Blog Card */
+      .blog-card {
+        background: white;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .blog-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+      }
+      .blog-image {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+      }
+      .blog-content {
+        padding: 18px;
+      }
+      .blog-title {
+        font-size: 1.6em;
+        margin-bottom: 8px;
+      }
+
+      /* meta */
+      .meta {
+        font-size: 0.9em;
+        color: #555;
+        margin-bottom: 10px;
+      }
+      .meta img {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+
+      /* Label */
+      .labels span {
+        display: inline-block;
+        margin-right: 6px;
+        margin-top: 6px;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.8em;
+        color: #fff;
+        font-weight: bold;
+      }
+      .ai {
+        background: #6a82fb;
+      }
+      .tech {
+        background: #26a69a;
+      }
+      .inovasi {
+        background: #ff7043;
+      }
+      .html {
+        background: #ec407a;
+      }
+      .css {
+        background: #29b6f6;
+      }
+      .tutorial {
+        background: #8e24aa;
+      }
+      .mahasiswa {
+        background: #43a047;
+      }
+      .produktif {
+        background: #7b1fa2;
+      }
+
+      /* Button */
+      .read-more {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 10px 18px;
+        border-radius: 10px;
+        background: linear-gradient(120deg, #6a82fb, #fc5c7d);
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        transition: 0.3s;
+      }
+      .read-more:hover {
+        background: linear-gradient(120deg, #fc5c7d, #6a82fb);
+        box-shadow: 0 0 20px rgba(106, 130, 251, 0.6);
+      }
+
+      /* Sidebar */
+      aside {
+        background: white;
+        padding: 20px;
+        border-radius: 18px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      aside h3 {
+        margin: 10px 0;
+        color: #fc5c7d;
+      }
+      aside img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        border: 3px solid #6a82fb;
+      }
+      aside p {
+        font-size: 0.9em;
+        color: #444;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+        background: linear-gradient(120deg, #6a82fb, #fc5c7d);
+        color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+
+      @media (max-width: 900px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Blog Inspirasi Grace</h1>
+      <p>Wadah ide, teknologi, dan cerita menarik</p>
+      <nav>
+        <a href="blog.html">Blog</a>
+        <a href="detail.html">Detail</a>
+        <a href="form.html">Form</a>
+        <a href="tabel.html">Tabel</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section>
+        <!-- Artikel 1 -->
+        <div class="blog-card">
+          <img src="foto-artikel1.jpg" class="blog-image" alt="AI" />
+          <div class="blog-content">
+            <h2 class="blog-title" style="color: #6a82fb">
+              Masa Depan AI dalam Kehidupan Sehari-hari
+            </h2>
+            <div class="meta">
+              <img src="foto-penulis.jpg" alt="Grace Sania Silalahi" />
+              Ditulis oleh <b>Grace Sania Silalahi</b> | 6 Sep 2025
+            </div>
+            <p>
+              Artificial Intelligence (AI) sudah hadir dalam keseharian kita:
+              rekomendasi film, chatbot, hingga mobil otonom. Bagaimana
+              dampaknya bagi masa depan?
+            </p>
+            <div class="labels">
+              <span class="ai">#AI</span>
+              <span class="tech">#Teknologi</span>
+              <span class="inovasi">#Inovasi</span>
+            </div>
+            <a href="detail.html#artikel1" class="read-more"
+              >Baca Selengkapnya</a
+            >
+          </div>
+        </div>
+
+        <!-- Artikel 2 -->
+        <div class="blog-card">
+          <img src="foto-artikel2.jpg" class="blog-image" alt="HTML CSS" />
+          <div class="blog-content">
+            <h2 class="blog-title" style="color: #ff7043">
+              Belajar HTML & CSS: Tips Cepat untuk Pemula
+            </h2>
+            <div class="meta">
+              <img src="foto-penulis.jpg" alt="Grace Sania Silalahi" />
+              Ditulis oleh <b>Grace Sania Silalahi</b> | 1 Sep 2025
+            </div>
+            <p>
+              Mulai dari struktur dasar HTML hingga styling CSS modern. Artikel
+              ini memberikan langkah cepat agar pemula bisa membuat web yang
+              menarik.
+            </p>
+            <div class="labels">
+              <span class="html">#HTML</span>
+              <span class="css">#CSS</span>
+              <span class="tutorial">#Tutorial</span>
+            </div>
+            <a href="detail.html#artikel2" class="read-more"
+              >Baca Selengkapnya</a
+            >
+          </div>
+        </div>
+
+        <!-- Artikel 3 -->
+        <div class="blog-card">
+          <img src="foto-artikel3.jpg" class="blog-image" alt="Mahasiswa" />
+          <div class="blog-content">
+            <h2 class="blog-title" style="color: #43a047">
+              Tips Produktif untuk Mahasiswa Informatika
+            </h2>
+            <div class="meta">
+              <img src="foto-penulis.jpg" alt="Grace Sania Silalahi" />
+              Ditulis oleh <b>Grace Sania Silalahi</b> | 28 Agu 2025
+            </div>
+            <p>
+              Mengelola waktu kuliah, project, dan organisasi memang menantang.
+              Simak trik menjaga produktivitas tanpa kehilangan semangat.
+            </p>
+            <div class="labels">
+              <span class="mahasiswa">#Mahasiswa</span>
+              <span class="produktif">#Produktif</span>
+            </div>
+            <a href="detail.html#artikel3" class="read-more"
+              >Baca Selengkapnya</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside>
+        <img src="foto-penulis.jpg" alt="Grace Sania Silalahi" />
+        <h3>Grace Sania Silalahi</h3>
+        <p>Mahasiswi Informatika | Penulis Blog</p>
+      </aside>
+    </div>
+
+    <footer>© 2025 Grace Sania Silalahi | Blog Inspirasi</footer>
+  </body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Grace Sania Silalahi" />
+    <title>Detail Blog - Blog Inspirasi Grace</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #fdfbfb, #f1f5ff);
+        min-height: 100vh;
+        color: #2c2c3a;
+        line-height: 1.7;
+      }
+
+      /* Header */
+      header {
+        background: linear-gradient(120deg, #6a82fb, #fc5c7d);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+      }
+      header h1 {
+        font-size: 2.3em;
+        margin-bottom: 8px;
+      }
+      header p {
+        opacity: 0.95;
+        font-size: 1.05em;
+        margin-bottom: 15px;
+      }
+      nav a {
+        color: #fff;
+        font-weight: bold;
+        margin: 0 12px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      nav a:hover {
+        color: #ffe082;
+      }
+
+      /* Container */
+      .container {
+        max-width: 850px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      .article {
+        background: #fff;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        animation: fadeIn 0.8s ease;
+      }
+      .hero {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        display: block;
+      }
+      .content {
+        padding: 25px;
+      }
+      .content h2 {
+        font-size: 1.8em;
+        margin-bottom: 12px;
+      }
+      .meta {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 0.9em;
+        color: #555;
+        margin-bottom: 20px;
+      }
+      .meta img {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+      }
+      .content p {
+        margin-bottom: 16px;
+        font-size: 1em;
+        color: #333;
+      }
+
+      /* Label */
+      .labels {
+        margin-top: 18px;
+      }
+      .labels span {
+        display: inline-block;
+        margin: 5px;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 0.85em;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      /* Warna tema tiap artikel */
+      #artikel1 h2 {
+        color: #6a82fb;
+      }
+      #artikel1 .meta img {
+        border: 2px solid #6a82fb;
+      }
+      #artikel1 .ai {
+        background: #6a82fb;
+      }
+      #artikel1 .tech {
+        background: #26a69a;
+      }
+      #artikel1 .inovasi {
+        background: #ff7043;
+      }
+
+      #artikel2 h2 {
+        color: #ff7043;
+      }
+      #artikel2 .meta img {
+        border: 2px solid #ff7043;
+      }
+      #artikel2 .html {
+        background: #ec407a;
+      }
+      #artikel2 .css {
+        background: #29b6f6;
+      }
+      #artikel2 .tutorial {
+        background: #8e24aa;
+      }
+
+      #artikel3 h2 {
+        color: #43a047;
+      }
+      #artikel3 .meta img {
+        border: 2px solid #43a047;
+      }
+      #artikel3 .mahasiswa {
+        background: #43a047;
+      }
+      #artikel3 .produktif {
+        background: #7b1fa2;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+        background: linear-gradient(120deg, #6a82fb, #fc5c7d);
+        color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Detail Artikel Blog</h1>
+      <p>Baca versi lengkap artikel dari Blog Inspirasi Grace</p>
+      <nav>
+        <a href="blog.html">Blog</a>
+        <a href="detail.html">Detail</a>
+        <a href="form.html">Form</a>
+        <a href="tabel.html">Tabel</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- Artikel 1 -->
+      <article class="article" id="artikel1">
+        <img src="foto-artikel1.jpg" class="hero" alt="AI" />
+        <div class="content">
+          <h2>Masa Depan AI dalam Kehidupan Sehari-hari</h2>
+          <div class="meta">
+            <img src="foto-penulis.jpg" alt="Grace" />
+            <span><b>Grace Sania Silalahi</b> | 6 September 2025</span>
+          </div>
+          <p>
+            Artificial Intelligence (AI) sudah merambah ke banyak aspek
+            kehidupan: mulai dari rekomendasi film, chatbot layanan pelanggan,
+            hingga mobil otonom.
+          </p>
+          <p>
+            Dalam pendidikan, AI menghadirkan tutor virtual. Dalam kesehatan,
+            membantu mendiagnosa lebih cepat. Namun, tantangan etika dan privasi
+            tetap harus dijaga.
+          </p>
+          <div class="labels">
+            <span class="ai">#AI</span>
+            <span class="tech">#Teknologi</span>
+            <span class="inovasi">#Inovasi</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Artikel 2 -->
+      <article class="article" id="artikel2">
+        <img src="foto-artikel2.jpg" class="hero" alt="Coding" />
+        <div class="content">
+          <h2>Belajar HTML & CSS: Tips Cepat untuk Pemula</h2>
+          <div class="meta">
+            <img src="foto-penulis.jpg" alt="Grace" />
+            <span><b>Grace Sania Silalahi</b> | 1 September 2025</span>
+          </div>
+          <p>
+            HTML adalah kerangka dasar sebuah website, sementara CSS memberi
+            warna dan bentuk. Dengan keduanya, kamu bisa membuat halaman web
+            yang menarik.
+          </p>
+          <p>
+            Tips: Mulailah dengan memahami struktur dasar HTML, lalu tambahkan
+            styling dengan CSS. Gunakan developer tools untuk latihan cepat.
+          </p>
+          <div class="labels">
+            <span class="html">#HTML</span>
+            <span class="css">#CSS</span>
+            <span class="tutorial">#Tutorial</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Artikel 3 -->
+      <article class="article" id="artikel3">
+        <img src="foto-artikel3.jpg" class="hero" alt="Mahasiswa" />
+        <div class="content">
+          <h2>Tips Produktif untuk Mahasiswa Informatika</h2>
+          <div class="meta">
+            <img src="foto-penulis.jpg" alt="Grace" />
+            <span><b>Grace Sania Silalahi</b> | 28 Agustus 2025</span>
+          </div>
+          <p>
+            Mengelola waktu kuliah, organisasi, dan proyek memang tantangan.
+            Kuncinya ada pada disiplin dan konsistensi.
+          </p>
+          <p>
+            Gunakan teknik Pomodoro, buat to-do list harian, dan jangan lupa
+            istirahat cukup agar tetap fokus.
+          </p>
+          <div class="labels">
+            <span class="mahasiswa">#Mahasiswa</span>
+            <span class="produktif">#Produktif</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <footer>© 2025 Grace Sania Silalahi | Blog Inspirasi</footer>
+  </body>
+</html>

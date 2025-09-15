@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Grace Sania Silalahi" />
+    <title>Form Input Data Mahasiswa</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #e1bee7, #bbdefb);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+      }
+
+      .form-container {
+        width: 430px;
+        background: white;
+        padding: 30px 28px;
+        border-radius: 20px;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+        animation: fadeIn 0.8s ease;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.9em;
+        color: #6a1b9a;
+      }
+
+      nav {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      nav a {
+        color: #512da8;
+        font-weight: bold;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      nav a:hover {
+        color: #e91e63;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: #37474f;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 11px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        font-size: 14px;
+        transition: 0.3s;
+      }
+      input:focus,
+      select:focus {
+        border-color: #ab47bc;
+        box-shadow: 0 0 10px rgba(171, 71, 188, 0.4);
+        outline: none;
+      }
+
+      .radio-group,
+      .checkbox-group {
+        margin-bottom: 14px;
+      }
+      .radio-group label,
+      .checkbox-group label {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: normal;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      button {
+        flex: 1;
+        padding: 13px;
+        border: none;
+        border-radius: 12px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .reset-btn {
+        background: linear-gradient(120deg, #ffb74d, #ff7043);
+      }
+      .reset-btn:hover {
+        box-shadow: 0 0 12px #ff7043;
+        transform: scale(1.06);
+      }
+
+      .submit-btn {
+        background: linear-gradient(120deg, #ab47bc, #8e24aa);
+      }
+      .submit-btn:hover {
+        box-shadow: 0 0 12px #8e24aa;
+        transform: scale(1.06);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(25px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <nav>
+        <a href="blog.html">Blog</a> | <a href="detail.html">Detail</a> |
+        <a href="tabel.html">Tabel</a> |
+        <a href="cv.html">CV</a>
+      </nav>
+
+      <h1>Form Data Mahasiswa</h1>
+
+      <form>
+        <label for="nama">Nama Lengkap</label>
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="Masukkan nama lengkap"
+          required
+        />
+
+        <label>Jenis Kelamin</label>
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="gender" value="Laki-laki" required />
+            Laki-laki</label
+          >
+          <label
+            ><input type="radio" name="gender" value="Perempuan" />
+            Perempuan</label
+          >
+        </div>
+
+        <label for="tempat">Tempat Lahir</label>
+        <input
+          type="text"
+          id="tempat"
+          name="tempat"
+          placeholder="Masukkan tempat lahir"
+          required
+        />
+
+        <label for="tanggal">Tanggal Lahir</label>
+        <input type="date" id="tanggal" name="tanggal" required />
+
+        <label>Hobi</label>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" name="hobi" value="Membaca" />
+            Membaca</label
+          >
+          <label
+            ><input type="checkbox" name="hobi" value="Olahraga" />
+            Olahraga</label
+          >
+          <label
+            ><input type="checkbox" name="hobi" value="Musik" /> Musik</label
+          >
+          <label
+            ><input type="checkbox" name="hobi" value="Traveling" />
+            Traveling</label
+          >
+        </div>
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Masukkan password"
+          required
+        />
+
+        <label>
+          <input type="checkbox" required /> Saya menyetujui syarat dan
+          ketentuan
+        </label>
+
+        <div class="buttons">
+          <button type="reset" class="reset-btn">Reset</button>
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

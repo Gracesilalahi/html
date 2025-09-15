@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Grace Sania Silalahi" />
+    <title>CV - Grace Sania Silalahi</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #e1bee7, #bbdefb, #f8bbd0, #ffe0b2);
+        background-size: 300% 300%;
+        animation: gradientShift 10s infinite alternate;
+        color: #2c3e50;
+      }
+
+      header {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(12px);
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        animation: slideDown 1s ease;
+      }
+      header h1 {
+        margin: 10px 0 5px;
+        font-size: 3em;
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      }
+      header p {
+        margin: 0;
+        font-size: 1.2em;
+        font-style: italic;
+      }
+      nav {
+        margin-top: 20px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        margin: 0 15px;
+        padding: 8px 14px;
+        border-radius: 20px;
+        background: linear-gradient(120deg, #8e24aa, #3949ab);
+        transition: 0.3s;
+      }
+      nav a:hover {
+        background: linear-gradient(120deg, #d81b60, #3949ab);
+        transform: scale(1.1);
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 35px;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+        animation: fadeIn 1.2s ease-in-out;
+      }
+
+      .profile {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .profile img {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        box-shadow: 0 0 30px rgba(142, 36, 170, 0.8);
+        animation: pulse 3s infinite;
+      }
+      .profile h2 {
+        margin: 20px 0 8px;
+        font-size: 2.2em;
+        color: #3949ab;
+      }
+      .profile p {
+        color: #555;
+        font-style: italic;
+      }
+
+      .section {
+        margin-bottom: 45px;
+      }
+      .section h3 {
+        border-left: 10px solid #8e24aa;
+        padding-left: 14px;
+        color: #d81b60;
+        margin-bottom: 25px;
+        font-size: 1.7em;
+        letter-spacing: 1px;
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+      }
+      .section ul {
+        list-style: none;
+        padding: 0;
+      }
+      .section ul li {
+        padding: 16px 20px;
+        margin-bottom: 16px;
+        background: rgba(255, 255, 255, 0.9);
+        border-left: 6px solid #3949ab;
+        border-radius: 18px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: 0.4s;
+      }
+      .section ul li:hover {
+        transform: translateY(-5px);
+        background: #f3e5f5;
+      }
+
+      .skills span {
+        display: inline-block;
+        background: linear-gradient(120deg, #3949ab, #8e24aa, #d81b60);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-size: 1em;
+        margin: 8px;
+        transition: 0.3s;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+      .skills span:hover {
+        transform: scale(1.15);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px;
+        background: linear-gradient(120deg, #3949ab, #8e24aa, #d81b60);
+        color: white;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        margin-top: 60px;
+        box-shadow: 0 -6px 25px rgba(0, 0, 0, 0.2);
+      }
+      footer a {
+        color: #ffeb3b;
+        text-decoration: none;
+        margin: 0 12px;
+        font-weight: bold;
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideDown {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 20px rgba(142, 36, 170, 0.8);
+        }
+        50% {
+          box-shadow: 0 0 40px rgba(216, 27, 96, 0.9);
+        }
+        100% {
+          box-shadow: 0 0 20px rgba(142, 36, 170, 0.8);
+        }
+      }
+      @keyframes gradientShift {
+        0% {
+          background-position: left top;
+        }
+        100% {
+          background-position: right bottom;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Curriculum Vitae</h1>
+      <p>"Belajar, Berkarya, dan Berinovasi"</p>
+      <nav>
+        <a href="blog.html">Blog</a>
+        <a href="form.html">Form</a>
+        <a href="tabel.html">Tabel Mahasiswa</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- Profil -->
+      <div class="profile">
+        <img src="foto-penulis.jpg" alt="Foto Profil Grace" />
+        <h2>Grace Sania Silalahi</h2>
+        <p>Mahasiswi Informatika | Web & UX Enthusiast</p>
+      </div>
+
+      <!-- Pendidikan -->
+      <div class="section">
+        <h3>Pendidikan</h3>
+        <ul>
+          <li><b>Institut Teknologi Del</b> - Informatika (2023 - Sekarang)</li>
+          <li><b>SMA Swasta Methodist 1 Medan</b> - IPA (2020 - 2023)</li>
+        </ul>
+      </div>
+
+      <!-- Pengalaman -->
+      <div class="section">
+        <h3>Pengalaman</h3>
+        <ul>
+          <li>
+            <b>Asisten Praktikum</b> - Pemrograman Dasar (2024 - Sekarang)
+          </li>
+          <li>
+            <b>Freelancer</b> - Web Development & UI/UX Design (2023 - Sekarang)
+          </li>
+        </ul>
+      </div>
+
+      <!-- Skill -->
+      <div class="section">
+        <h3>Keahlian</h3>
+        <div class="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Java</span>
+          <span>Python</span>
+          <span>UI/UX Design</span>
+        </div>
+      </div>
+
+      <!-- Kontak -->
+      <div class="section">
+        <h3>Kontak</h3>
+        <ul>
+          <li>Email: grcsania23@gmail.com</li>
+          <li>Telepon: +62 831-6529-9640</li>
+          <li>Alamat: Medan, Sumatera Utara</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 Grace Sania Silalahi | Terhubung di
+      <a href="#">LinkedIn</a> | <a href="#">GitHub</a> |
+      <a href="#">Instagram</a>
+    </footer>
+  </body>
+</html>
